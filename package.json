@@ -1,7 +1,7 @@
 {
-  "name": "a3-demo",
+  "name": "a3-gatsby-demo",
   "version": "1.0.0-prealpha",
-  "description": "Apostrophe 3 Demo Site",
+  "description": "Apostrophe 3 Gatsby Demo Site",
   "main": "app.js",
   "scripts": {
     "build": "webpack && npm run apostrophe-build",
