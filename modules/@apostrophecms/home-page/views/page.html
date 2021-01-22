@@ -5,13 +5,11 @@
 
 {% extends "layout.html" %}
 
-{# Home page is full width #}
-{% block sideNav %}{% endblock %}
-
 {% block main %}
-  <div class="home">
-    <div class="content">
-      {% area data.page, 'main' %}
+  <section class="rl-home">
+    <div class="rl-featured">
+      {# TODO: Add featured program #}
     </div>
-  </div>
+    {% area data.page, 'main' %}
+  </section>
 {% endblock %}

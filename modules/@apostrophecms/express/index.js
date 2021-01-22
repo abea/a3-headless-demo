@@ -1,8 +1,13 @@
 module.exports = {
   options: {
     session: {
-      // If this still says `undefined`, set a real secret!
-      secret: 'e45faf16a3e6f86a'
+      secret: '4445faf16add86a'
+    },
+    apiKeys: {
+      q7vKZQuqkWf: {
+        // The user role associated with this key
+        role: 'admin'
+      }
     }
   }
 };

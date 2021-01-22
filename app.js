@@ -1,7 +1,7 @@
 const path = require('path');
 
 require('apostrophe')({
-  shortName: 'a3-demo',
+  shortName: 'a3-for-gatsby',
 
   // See lib/modules for basic project-level configuration of our modules
   // responsible for serving static assets, managing page templates and
@@ -50,13 +50,6 @@ require('apostrophe')({
       }
     },
 
-    // For a good experience user-testing our admin UI
-    '@apostrophecms/storybook': {
-      options: {
-        domain: 'ui.apos.dev'
-      }
-    },
-
     // A home for our own project-specific javascript and SASS assets
     asset: {},
 
@@ -66,12 +59,12 @@ require('apostrophe')({
     // A page type for ordinary pages
     'default-page': {},
 
-    // A piece type for articles
-    article: {},
-    // Tease an article on any page
-    'article-widget': {},
-    // Paginated index of articles, and with pages for individual articles
-    'article-page': {}
+    // A piece type for blog posts
+    blog: {},
+    // A piece type for camp programs
+    program: {},
+    // A piece type for camp staff
+    'staff-member': {}
 
   }
 });
