@@ -52,7 +52,8 @@ module.exports = {
           'startDate',
           'endDate',
           'ageGroup',
-          'description'
+          'description',
+          'cost'
         ]
       }
     }

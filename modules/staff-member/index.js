@@ -27,10 +27,9 @@ module.exports = {
         fields: [
           'title',
           'visibility',
-          'startDate',
-          'endDate',
-          'ageGroup',
-          'description'
+          'jobTitle',
+          'photo',
+          'funFact'
         ]
       }
     }
