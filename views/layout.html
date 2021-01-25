@@ -35,6 +35,7 @@
 {% endblock %}
 
 {% block beforeMain %}
+{% if data.query.headless != 'true' %}
   <header class="rl-header container mx-auto mb-6 mt-8 max-w-3xl">
     <div class="w-full flex mb-4">
       <a class="mr-6" href="/">
@@ -89,8 +90,11 @@
     {% endif %}
   </header>
   <main class="container mx-auto max-w-3xl">
+{% endif %}
 {% endblock %}
 
 {% block afterMain %}
+{% if data.query.headless != true %}
   </main>
+{% endif %}
 {% endblock %}
