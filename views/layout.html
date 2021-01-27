@@ -94,7 +94,7 @@
 {% endblock %}
 
 {% block afterMain %}
-{% if data.query.headless != true %}
+{% if data.query.headless != 'true' %}
   </main>
 {% endif %}
 {% endblock %}

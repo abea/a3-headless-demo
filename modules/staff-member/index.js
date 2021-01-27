@@ -4,6 +4,7 @@ module.exports = {
     add: {
       jobTitle: {
         type: 'string',
+        required: true,
         label: 'Job title'
       },
       photo: {

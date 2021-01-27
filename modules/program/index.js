@@ -11,22 +11,26 @@ module.exports = {
       },
       startDate: {
         type: 'date',
+        required: true,
         label: 'Starting date'
       },
       endDate: {
         type: 'date',
+        required: true,
         label: 'Ending date'
       },
       cost: {
         type: 'float',
+        required: true,
         label: 'Cost (in USD)'
       },
       ageGroup: {
         type: 'select',
+        required: true,
         choices: [
           {
             label: '6 to 9 year olds',
-            value: '6to9'
+            value: '06to09'
           },
           {
             label: '10 to 12 year olds',
@@ -48,7 +52,6 @@ module.exports = {
         label: 'Basics',
         fields: [
           'title',
-          'visibility',
           'startDate',
           'endDate',
           'ageGroup',

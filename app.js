@@ -29,17 +29,17 @@ require('apostrophe')({
     // Custom CSS classes for standard apostrophe widgets
     '@apostrophecms/rich-text-widget': {
       options: {
-        className: 'rl-rte'
+        className: 'rl-rte mb-4'
       }
     },
     '@apostrophecms/image-widget': {
       options: {
-        className: 'rl-image'
+        className: 'rl-image mb-4'
       }
     },
     '@apostrophecms/video-widget': {
       options: {
-        className: 'rl-video'
+        className: 'rl-video mb-4'
       }
     },
     // Manages apostrophe's overall asset pipeline
