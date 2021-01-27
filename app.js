@@ -65,6 +65,5 @@ require('apostrophe')({
     program: {},
     // A piece type for camp staff
     'staff-member': {}
-
   }
 });
