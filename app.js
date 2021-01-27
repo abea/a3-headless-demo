@@ -59,8 +59,6 @@ require('apostrophe')({
     // A page type for ordinary pages
     'default-page': {},
 
-    // A piece type for blog posts
-    blog: {},
     // A piece type for camp programs
     program: {},
     // A piece type for camp staff
