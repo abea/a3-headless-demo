@@ -2,7 +2,7 @@ const path = require('path');
 
 require('apostrophe')({
   shortName: 'a3-for-gatsby',
-
+  baseUrl: 'http://localhost:3000',
   // See lib/modules for basic project-level configuration of our modules
   // responsible for serving static assets, managing page templates and
   // configuring user accounts.
