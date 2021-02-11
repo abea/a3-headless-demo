@@ -16,7 +16,7 @@
   "dependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
-    "apostrophe": "github:apostrophecms/apostrophe#3.0",
+    "apostrophe": "3.0.0-alpha.3",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.3.0",
     "extract-css-chunks-webpack-plugin": "^4.8.0",
