@@ -4,10 +4,9 @@
   "description": "Apostrophe 3 headless demo site",
   "main": "app.js",
   "scripts": {
-    "build": "webpack && npm run apostrophe-build",
-    "apostrophe-build": "node app @apostrophecms/asset:build",
     "start": "node app",
-    "dev": "nodemon --delay 1000ms -x \"npm run build && nodemon app.js\""
+    "build": "node app @apostrophecms/asset:build",
+    "dev": "nodemon --delay 1000ms -x \"nodemon app.js\""
   },
   "repository": {
     "type": "git",
@@ -16,40 +15,26 @@
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "apostrophe": "3.0.0-alpha.4",
-    "babel-loader": "^8.2.2",
-    "css-loader": "^5.0.1",
-    "mini-css-extract-plugin": "^1.3.4",
-    "sass": "^1.32.8",
-    "sass-loader": "^10.1.1",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.16.0",
-    "webpack-cli": "^4.4.0"
+    "apostrophe": "^3.0.1"
   },
   "author": "Apostrophe Technologies, Inc",
   "license": "MIT",
   "nodemonConfig": {
+    "delay": 1000,
     "verbose": true,
     "watch": [
       "./app.js",
       "./modules/**/*",
       "./lib/**/*.js",
-      "./views/**/*.html",
-      "./src/**/*",
-      "./node_modules/apostrophe/modules/@apostrophecms/**/*"
+      "./views/**/*.html"
     ],
     "ignoreRoot": [
       ".git"
     ],
     "ignore": [
-      "lib/modules/*/public/js/*.js",
       "locales/*.json",
-      "public/modules/**/*.less",
-      "public/modules/**/*.js",
       "public/uploads",
-      "public/apos-minified/*.js",
-      "public/css/master-*.less",
-      "modules/asset/ui/public/site.js",
+      "public/apos-frontend/*.js",
       "data"
     ],
     "ext": "json, js, html, scss, vue"

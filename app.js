@@ -1,5 +1,3 @@
-const path = require('path');
-
 require('apostrophe')({
   shortName: 'a3-for-gatsby',
   baseUrl: 'http://localhost:3000',
@@ -8,7 +6,6 @@ require('apostrophe')({
   // configuring user accounts.
 
   modules: {
-
     // Apostrophe module configuration
 
     // Note: most configuration occurs in the respective
@@ -16,15 +13,6 @@ require('apostrophe')({
 
     // However any modules that are not present by default in Apostrophe must at
     // least have a minimal configuration here to turn them on: `moduleName: {}`
-
-    // If a template is not found somewhere else, serve it from the top-level
-    // `views/` folder of the project
-
-    '@apostrophecms/template': {
-      options: {
-        viewsFolderFallback: path.join(__dirname, 'views')
-      }
-    },
 
     // Custom CSS classes for standard apostrophe widgets
     '@apostrophecms/rich-text-widget': {
