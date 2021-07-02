@@ -15,7 +15,7 @@
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "apostrophe": "^3.0.1"
+    "apostrophe": "^3.1.0"
   },
   "author": "Apostrophe Technologies, Inc",
   "license": "MIT",
